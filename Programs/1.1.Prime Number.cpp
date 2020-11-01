@@ -9,7 +9,7 @@ int main() {
 	cout<<"Enter A Number to check Prime Number or Not: ";
 	cin>>num;
 	
-	for(int i=2; i<sqrt(num); i++){
+	for(int i=2; i<num; i++){
 		if(num%i==0){
 			isPrime = false;
 			cout<<num<<" is Not a Prime Number";
