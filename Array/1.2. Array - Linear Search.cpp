@@ -5,12 +5,12 @@ int linearSearch(int arr[], int n, int key){
 	for(int i=0; i<n; i++){
 		if(arr[i] == key){
 			cout<<endl<<"\t"<<key<<" Founded at the Position of: "<<i+1;
-			return i+1;
+			return 0;
 		}
 	}
 	
-	cout<<endl<<key<<" Not Found...";
-	return -1;
+	cout<<endl<<"\t"<<key<<" Not Found...";
+	return 0;
 }
 
 int main(){
