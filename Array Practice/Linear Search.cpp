@@ -1,32 +1,39 @@
 #include <iostream>
 using namespace std;
 
-void linearSearch(int arr[], int num, int searchingNum){
+void linearSearch(int arr[], int num, int searchNumber){
+	
+	bool numberNotFounded = true;
+	
 	for(int i=0; i<num; i++){
-		if(searchingNum == arr[i]){
-			cout<<searchingNum<<" Number founded at the position: "<<i+1;
-		}else{
-			cout<<searchingNum<<" Number not Found";
+		if(searchNumber == arr[i]){
+			cout<<searchNumber<<" Number is found at position: "<<i+1;
+			numberNotFounded = false;
+			break;
 		}
+	}
+	
+	if(numberNotFounded){
+		cout<<searchNumber<<" Number is Not founded";
 	}
 }
 
 int main(){
-    int num,i, searchingNum;
-    cout<<"Enter How many Numbers u want to Enter?\n";
-    cin>>num;
 	
-	int arr[num];
+	int num, arr[num], searchNumber;
+	cout<<"How many Elements u want to insert? \n";
 	
-	for(i=0; i<num; i++){
+	cin>>num;
+	
+	cout<<"\n Enter ut Numbers:- \n";
+	for(int i=0; i<num; i++){
 		cin>>arr[i];
 	}
 	
-	cout<<"Enter a Number to Search: ";
-	cin>>searchingNum;
+	cout<<"\n Enter the Number u want to search:- ";
+	cin>>searchNumber;
 	
-	linearSearch(arr, num, searchingNum);
-	
+	linearSearch(arr, num, searchNumber);
 	
     return 0;
 }   
