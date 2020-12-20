@@ -7,12 +7,10 @@ int main(){
 	cin>>num;
 	
 	int factorial = 1;
-	
-	for(int i=num; i>1; i--){
+	for(int i=num; i>=2; i--){
 		factorial *= i;
 	}
-	
-	cout<<"Factorial of: "<<num<<" is:- "<<factorial;
-    
+	cout<<"Factorial of "<<num<<" is: "<<factorial;
+
     return 0;
 }   
