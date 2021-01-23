@@ -1,2 +1,2 @@
-# C++ Practice
+# JS Practice
 
