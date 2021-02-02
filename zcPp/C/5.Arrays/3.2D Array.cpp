@@ -15,7 +15,7 @@ int main(){
 		}
 	}
 
-
+	cout<<endl<<"Marks of the Students : \n";
 	for(int row=0; row<nStdnt; row++){
 		for(int col=0; col<nSubjct; col++){
 			cout<<"Student No. "<<row+1<<" Marks of Subject No. "<<col+1<<" is : "<<marks[row][col]<<endl;
