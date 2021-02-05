@@ -3,8 +3,8 @@ using namespace std;
 
 int main(){
 
-	int num, sum=0;
-	cin>>num;
+	int a, b, c;
+	cin>>;
 	
 	int arr[num];
 	
