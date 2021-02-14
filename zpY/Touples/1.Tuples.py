@@ -1,7 +1,7 @@
-touple1 = (1, 3, 9, 2)
+tuple1 = (1, 3, 9, 2)
 
 
-# touple1[0] = 5 # Wrong, Touple is immutable
+# tuple1[0] = 5 # Wrong, Touple is immutable
 
 tpl1 = () #Empty Touple
 print(tpl1)
