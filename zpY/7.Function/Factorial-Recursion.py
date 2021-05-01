@@ -1,9 +1,9 @@
 def printFactorial(num):
-    if(num==1):
-        return 1
-    
-    return num * printFactorial(num-1)
+    fact = 1
+    for i in range(1, num+1):
+        fact = fact * i
+
+    return fact
 
 
-
-print(printFactorial(3))
+print(printFactorial(5))
