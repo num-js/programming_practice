@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Horizontal Scroll Nav </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* * {
+            box-sizing: border-box;
+            user-select: none;
+        } */
+
+        body {
+            max-width: 760px;
+            margin: 10vmin auto 0;
+            /* color: #fff; */
+        }
+
+
+
+        .nav-header  {
+            width: 25%;
+        }
+
+        .nav-header nav {
+            width: 75%;
+        }
+
+        header {
+            background: #212121;
+        }
+
+
+
+
+        .item {
+            padding: 12px 16px 13px;
+        }
+
+        .item:not(:last-child) {
+            border-right: 1px solid #7e7e7e;
+        }
+
+        header,
+        nav {
+            font-size: 0;
+        }
+
+        .item {
+            font-size: 24px;
+        }
+
+        .item,
+        .middle {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .scroll {
+            white-space: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+
+        .scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        @media (max-width: 765px) {
+            .item {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container nav">
+        <div class="info">On Desktop, control with left and right keys & cursor slider also works</div>
+        <header class="nav-header">
+            <nav class="middle scroll">
+                <span class="item">Home</span>
+                <span class="item">About</span>
+                <span class="item">Portfolio</span>
+                <span class="item">Pricing</span>
+                <span class="item">Services</span>
+                <span class="item">Contact</span>
+                <span class="item">Blog</span>
+                <span class="item">Help</span>
+            </nav>
+        </header>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <b>ThankYou for the article - <a href="https://webdevtrick.com/horizontal-scroll-navigation/">check it out</a></b>
+</body>
+
+</html>
