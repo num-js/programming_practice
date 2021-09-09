@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            transition: height 0.5s;
+        }
+
+        .expand-div {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="div" onclick="addClassN()"></div>
+
+    <br />
+
+    <button onclick="removeClassN()">Close</button>
+
+
+
+    <script>
+        function addClassN() {
+            document.getElementById('div').classList.add("expand-div");
+        }
+
+        function removeClassN() {
+            document.getElementById('div').classList.remove("expand-div");
+        }
+    </script>
+
+
+</body>
+
+</html>
