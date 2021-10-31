@@ -3,4 +3,4 @@ var data = () => {
     return Date.now;
 }
 
-console.log(data());
+console.log(`Current Date is ${data()}`);
