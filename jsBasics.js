@@ -1,6 +1,6 @@
-var name = 'numan';
+var name = 'rounak';
 var data = () => {
     return Date.now;
 }
 
-console.log(`Current Date is ${data()}`);
+console.log(`Current Date is ${data()}`); 
